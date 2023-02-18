@@ -1,0 +1,2831 @@
+<html class="h-full bg-gray-50">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Light.woff");
+      font-weight: 300;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Book.woff");
+      font-weight: 350;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Regular.woff");
+      font-weight: 400;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Medium.woff");
+      font-weight: 500;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Bold.woff");
+      font-weight: 600;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'Geomanist';
+      src: url("/fonts/Geomanist-Bold.woff");
+      font-weight: 700;
+      font-style: normal
+    }
+
+    html {
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      font-family: 'Geomanist', sans-serif;
+    }
+
+    /* Sections
+         ========================================================================== */
+
+    /**
+     * Remove the margin in all browsers.
+     */
+    body {
+      margin: 0;
+      font-family: 'Geomanist', sans-serif;
+    }
+
+    /**
+     * Render the `main` element consistently in IE.
+     */
+    main {
+      display: block;
+    }
+
+    /**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    /* Grouping content
+         ========================================================================== */
+
+    /**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+    pre {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    /* Text-level semantics
+         ========================================================================== */
+
+    /**
+     * Remove the gray background on active links in IE 10.
+     */
+    a {
+      background-color: transparent;
+    }
+
+    /**
+     * 1. Remove the bottom border in Chrome 57-
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+    abbr[title] {
+      border-bottom: none;
+      text-decoration: underline;
+      text-decoration: underline dotted;
+    }
+
+    /**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    /**
+     * Add the correct font size in all browsers.
+     */
+    small {
+      font-size: 80%;
+    }
+
+    /**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    /* Embedded content
+         ========================================================================== */
+
+    /**
+     * Remove the border on images inside links in IE 10.
+     */
+    img {
+      border-style: none;
+    }
+
+    /* Forms
+         ========================================================================== */
+
+    /**
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    /**
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
+    button,
+    input {
+      overflow: visible;
+    }
+
+    /**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+    button,
+    select {
+      text-transform: none;
+    }
+
+    /**
+     * Correct the inability to style clickable types in iOS and Safari.
+     */
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Correct the padding in Firefox.
+     */
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *		`fieldset` elements in all browsers.
+     */
+    legend {
+      box-sizing: border-box;
+      color: inherit;
+      display: table;
+      max-width: 100%;
+      padding: 0;
+      white-space: normal;
+    }
+
+    /**
+     * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+    progress {
+      vertical-align: baseline;
+    }
+
+    /**
+     * Remove the default vertical scrollbar in IE 10+.
+     */
+    textarea {
+      overflow: auto;
+    }
+
+    /**
+     * 1. Add the correct box sizing in IE 10.
+     * 2. Remove the padding in IE 10.
+     */
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+    /**
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    /**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    /* Interactive
+         ========================================================================== */
+
+    /*
+     * Add the correct display in Edge, IE 10+, and Firefox.
+     */
+    details {
+      display: block;
+    }
+
+    /*
+     * Add the correct display in all browsers.
+     */
+    summary {
+      display: list-item;
+    }
+
+    /* Misc
+         ========================================================================== */
+
+    /**
+     * Add the correct display in IE 10+.
+     */
+    template {
+      display: none;
+    }
+
+    /**
+     * Add the correct display in IE 10.
+     */
+    [hidden] {
+      display: none;
+    }
+
+    /* Box sizing
+    --------------------------------------------- */
+
+    /* Inherit box-sizing to more easily change it's value on a component level.
+    @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    /*--------------------------------------------------------------
+    # Base
+    --------------------------------------------------------------*/
+
+    /* Typography
+    --------------------------------------------- */
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+      color: #40455F;
+      font-family: 'Geomanist', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      clear: both;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+      color: #40455F;
+    }
+
+    dfn,
+    cite,
+    em,
+    i {
+      font-style: italic;
+    }
+
+    blockquote {
+      margin: 0 1.5em;
+    }
+
+    address {
+      margin: 0 0 1.5em;
+    }
+
+    pre {
+      background: #eee;
+      font-family: "Courier 10 Pitch", courier, monospace;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: 1.6em;
+    }
+
+    code,
+    kbd,
+    tt,
+    var {
+      font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    }
+
+    abbr,
+    acronym {
+      border-bottom: 1px dotted #666;
+      cursor: help;
+    }
+
+    mark,
+    ins {
+      background: #fff9c0;
+      text-decoration: none;
+    }
+
+    big {
+      font-size: 125%;
+    }
+
+    /* Elements
+    --------------------------------------------- */
+    body {
+      background: #fff;
+    }
+
+    hr {
+      background-color: #ccc;
+      border: 0;
+      height: 1px;
+      margin-bottom: 1.5em;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1.5em 3em;
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    li > ul,
+    li > ol {
+      margin-bottom: 0;
+      margin-left: 1.5em;
+    }
+
+    dt {
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0 1.5em 1.5em;
+    }
+
+    /* Make sure embeds and iframes fit their containers. */
+    embed,
+    iframe,
+    object {
+      max-width: 100%;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    figure {
+      margin: 1em 0;
+    }
+
+    table {
+      margin: 0 0 1.5em;
+      width: 100%;
+    }
+
+    /* Links
+    --------------------------------------------- */
+
+    a:hover,
+    a:focus,
+    a:active {
+
+    }
+
+    a:focus {
+      outline: thin dotted;
+    }
+
+    a:hover,
+    a:active {
+      outline: 0;
+    }
+
+    /* Forms
+    --------------------------------------------- */
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      border: 1px solid;
+      border-color: #ccc #ccc #bbb;
+      border-radius: 3px;
+      background: #e6e6e6;
+      color: #40455F;
+      line-height: 1;
+      padding: 0.6em 1em 0.4em;
+    }
+
+    button:hover,
+    input[type="button"]:hover,
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
+      border-color: #ccc #bbb #aaa;
+    }
+
+    button:active,
+    button:focus,
+    input[type="button"]:active,
+    input[type="button"]:focus,
+    input[type="reset"]:active,
+    input[type="reset"]:focus,
+    input[type="submit"]:active,
+    input[type="submit"]:focus {
+      border-color: #aaa #bbb #bbb;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+      color: #40455F;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    input[type="number"]:focus,
+    input[type="tel"]:focus,
+    input[type="range"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="week"]:focus,
+    input[type="time"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="color"]:focus,
+    textarea:focus {
+      color: #40455F;
+    }
+
+    select {
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    /*--------------------------------------------------------------
+    # Layouts
+    --------------------------------------------------------------*/
+
+    /*--------------------------------------------------------------
+    # Components
+    --------------------------------------------------------------*/
+
+    /* Navigation
+    --------------------------------------------- */
+    .main-navigation {
+      display: block;
+      width: 100%;
+    }
+
+    .main-navigation ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+    }
+
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 100%;
+      left: -999em;
+      z-index: 99999;
+    }
+
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0;
+    }
+
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      display: block;
+      left: auto;
+    }
+
+    .main-navigation ul ul a {
+      width: 200px;
+    }
+
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto;
+    }
+
+    .main-navigation li {
+      position: relative;
+    }
+
+    .main-navigation a {
+      display: block;
+      text-decoration: none;
+    }
+
+    /* Small menu. */
+    .menu-toggle,
+    .main-navigation.toggled ul {
+      display: block;
+    }
+
+    @media screen and (min-width: 37.5em) {
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .main-navigation ul {
+        display: flex;
+      }
+    }
+
+    .site-main .comment-navigation,
+    .site-main
+    .posts-navigation,
+    .site-main
+    .post-navigation {
+      margin: 0 0 1.5em;
+    }
+
+    .comment-navigation .nav-links,
+    .posts-navigation .nav-links,
+    .post-navigation .nav-links {
+      display: flex;
+    }
+
+    .comment-navigation .nav-previous,
+    .posts-navigation .nav-previous,
+    .post-navigation .nav-previous {
+      flex: 1 0 50%;
+    }
+
+    .comment-navigation .nav-next,
+    .posts-navigation .nav-next,
+    .post-navigation .nav-next {
+      text-align: end;
+      flex: 1 0 50%;
+    }
+
+    /* Posts and pages
+    --------------------------------------------- */
+    .sticky {
+      display: block;
+    }
+
+    .post,
+    .page {
+      margin: 0 0 1.5em;
+    }
+
+    .updated:not(.published) {
+      display: none;
+    }
+
+    .page-content,
+    .entry-content,
+    .entry-summary {
+      margin: 1.5em 0 0;
+    }
+
+    .page-links {
+      clear: both;
+      margin: 0 0 1.5em;
+    }
+
+    /* Comments
+    --------------------------------------------- */
+    .comment-content a {
+      word-wrap: break-word;
+    }
+
+    .bypostauthor {
+      display: block;
+    }
+
+    /* Widgets
+    --------------------------------------------- */
+    .widget {
+      margin: 0 0 1.5em;
+    }
+
+    .widget select {
+      max-width: 100%;
+    }
+
+    /* Media
+    --------------------------------------------- */
+    .page-content .wp-smiley,
+    .entry-content .wp-smiley,
+    .comment-content .wp-smiley {
+      border: none;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    /* Make sure logo link wraps around logo image. */
+    .custom-logo-link {
+      display: inline-block;
+    }
+
+    /* Captions
+    --------------------------------------------- */
+    .wp-caption {
+      margin-bottom: 1.5em;
+      max-width: 100%;
+    }
+
+    .wp-caption img[class*="wp-image-"] {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wp-caption .wp-caption-text {
+      margin: 0.8075em 0;
+    }
+
+    .wp-caption-text {
+      text-align: center;
+    }
+
+    /* Galleries
+    --------------------------------------------- */
+    .gallery {
+      margin-bottom: 1.5em;
+      display: grid;
+      grid-gap: 1.5em;
+    }
+
+    .gallery-item {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+
+    .gallery-columns-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-columns-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-columns-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-columns-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .gallery-columns-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .gallery-columns-7 {
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .gallery-columns-8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .gallery-columns-9 {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    .gallery-caption {
+      display: block;
+    }
+
+    /*--------------------------------------------------------------
+    # Plugins
+    --------------------------------------------------------------*/
+
+    /* Jetpack infinite scroll
+    --------------------------------------------- */
+
+    /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+    .infinite-scroll .posts-navigation,
+    .infinite-scroll.neverending .site-footer {
+      display: none;
+    }
+
+    /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+    .infinity-end.neverending .site-footer {
+      display: block;
+    }
+
+    /*--------------------------------------------------------------
+    # Utilities
+    --------------------------------------------------------------*/
+
+    /* Accessibility
+    --------------------------------------------- */
+
+    /* Text meant only for screen readers. */
+    .screen-reader-text {
+      border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute !important;
+      width: 1px;
+      word-wrap: normal !important;
+    }
+
+    .screen-reader-text:focus {
+      background-color: #f1f1f1;
+      border-radius: 3px;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+      clip: auto !important;
+      clip-path: none;
+      color: #21759b;
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      height: auto;
+      left: 5px;
+      line-height: normal;
+      padding: 15px 23px 14px;
+      text-decoration: none;
+      top: 5px;
+      width: auto;
+      z-index: 100000;
+    }
+
+    /* Do not show the outline on the skip link target. */
+    #primary[tabindex="-1"]:focus {
+      outline: 0;
+    }
+
+    /* Alignments
+    --------------------------------------------- */
+    .alignleft {
+
+      /*rtl:ignore*/
+      float: left;
+
+      /*rtl:ignore*/
+      margin-right: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    .alignright {
+
+      /*rtl:ignore*/
+      float: right;
+
+      /*rtl:ignore*/
+      margin-left: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    .aligncenter {
+      clear: both;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.5em;
+    }
+
+    ul#primary-menu li {
+      margin-left: 16px;
+      margin-right: 16px;
+      color: #40455F;
+    }
+
+    li a {
+      color: #40455F;
+    }
+
+    .menu-item-31 {
+      padding: 10px;
+      padding-left: 36px;
+      padding-right: 36px;
+      background-color: #ffffff;
+      border-radius: 24px;
+      color: #5347E3 !important;
+      border: 1px solid #5347E3;
+    }
+
+    .register-btn {
+      padding: 10px;
+      padding-left: 36px;
+      padding-right: 36px;
+      background-color: #5347E3;
+      border-radius: 24px;
+      color: #ffffff;
+      border: 1px solid #5347E3;
+    }
+
+    .w-26 {
+      width: 135px;
+    }
+
+    .bg-primary {
+      background-color: #5347E3
+    }
+
+    .bg-light {
+      background-color: #6D63E7;
+    }
+
+    .border-primary {
+      border-color: #5347E3;
+    }
+
+    .border-light {
+      border-color: #E2E0FF;
+    }
+
+    .bg-light-1 {
+      background-color: #E2E0FF;
+    }
+
+    .text-primary {
+      color: #5347E3;
+    }
+
+    .text-secondary {
+      color: #65667B;
+    }
+
+    .text-dark {
+      color: #40455F;
+    }
+
+    .bg-translucent {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .light-text {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .glow {
+      box-shadow: 0 0 60px 2px #3A31A8;
+    }
+
+    .abs-middle {
+      transform: translateY(-50%);
+    }
+
+    .translateY30p {
+      transform: translateY(30%);
+    }
+
+    .translateY50p {
+      transform: translateY(50%);
+    }
+
+    .bg-card {
+      background-color: #E2E0FF;
+    }
+
+    .bg-light {
+      background-color: #E2E0FF;
+    }
+
+    .grid-top-left {
+      width: 16%;
+      top: -35%;
+    }
+
+    .grid-bottom-left {
+      width: 20%;
+      bottom: -35%;
+    }
+
+    .grid-bottom-left-abs {
+      width: 25%;
+      bottom: 0;
+      transform: translateY(70%);
+    }
+
+    .masked-test {
+      box-shadow: 0 25px 50px -12px rgba(83, 71, 227, .12);
+      border-radius: 20px;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      border: 1px solid #E2E0FF;
+    }
+
+    .max-h-1000 {
+      height: 1000px;
+    }
+
+    .w-700 {
+      width: 430px;
+    }
+
+    @media (max-width: 800px) {
+      .w-700 {
+        width: 375px;
+      }
+    }
+
+    .border-16 {
+      border-radius: 18px;
+    }
+
+    .border-t-light {
+      border-top-width: 0.1px;
+      border-color: rgba(99, 89, 216, 0.7);
+    }
+
+    .border-b-light {
+      border-bottom-width: 0.1px;
+      border-color: rgba(99, 89, 216, 0.7);
+    }
+
+    .border border-light_thin {
+      border-width: 0.1px;
+      border-color: #E2E0FF;
+    }
+
+    .border-t-thin {
+      border-top-width: 0.1px;
+      border-color: #E2E0FF;
+    }
+
+    .box-light {
+      box-shadow: 0 25px 50px -12px rgba(83, 71, 227, .12);
+    }
+
+    .border-t-dim {
+      border-top-width: 0.1px;
+      border-color: rgba(64, 69, 95, 0.1);
+    }
+
+    .border-b-dim {
+      border-bottom-width: 0.1px;
+      border-color: rgba(64, 69, 95, 0.1);
+    }
+
+    .dim-text {
+      color: #b1b1b3
+    }
+
+    p {
+      margin-block-end: 0
+    }
+
+    .border-light {
+      border-color: #E2E0FF;
+    }
+
+    @media (max-width: 860px) {
+      .content-top-bg {
+        height: 52px;
+      }
+
+      .content-bottom-bg {
+        height: 55px;
+      }
+
+      .content-top-bg-next {
+        height: 30px;
+      }
+
+      .w-26 {
+        width: 100px;
+      }
+    }
+
+    .accordion {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.4s;
+      user-select: none;
+    }
+
+    .panel {
+      max-height: 0;
+      padding-top: 16px;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .open {
+      transform: rotate(180deg);
+      transition: transform 300ms ease;
+    }
+
+    .close {
+      transform: rotate(0deg);
+      transition: transform 300ms ease;
+    }
+
+    #slider {
+      --active: #FF5252;
+      --balloon: var(--active);
+      --value: #fff;
+      --line: #E2E0FF;
+      touch-action: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 100%;
+      height: 10px;
+      border-radius: 30px;
+      background: var(--line);
+      position: relative;
+      outline: none;
+      border: none;
+    }
+
+    #slider .noUi-connects .noUi-connect {
+      background: var(--active);
+    }
+
+    #slider .noUi-handle:before, #slider .noUi-handle:after {
+      border-radius: 20px;
+      -webkit-transform: scale(var(--s));
+      transform: scale(var(--s));
+      -webkit-transition: border-radius .3s ease, -webkit-transform .3s ease;
+      transition: border-radius .3s ease, -webkit-transform .3s ease;
+      transition: transform .3s ease, border-radius .3s ease;
+      transition: transform .3s ease, border-radius .3s ease, -webkit-transform .3s ease;
+    }
+
+    #slider .noUi-handle:before {
+      --s: .5;
+      background: var(--active);
+    }
+
+    #slider .noUi-handle:after {
+      --s: .2;
+      background: #FF5252;
+    }
+
+    #slider .noUi-handle.noUi-active:before {
+      --s: 0.5;
+    }
+
+    #slider .noUi-handle.noUi-active:after {
+      --s: 0.5;
+    }
+
+    #slider .balloon {
+      /*--o: 0;*/
+      /*--s: 0;*/
+      /*--y: 0;*/
+      --o: 1;
+      --s: 1;
+      --y: -35px;
+      --r: 0deg;
+      width: 52px;
+      height: 68px;
+      pointer-events: none;
+      position: absolute;
+      z-index: 5;
+      left: -58px;
+      bottom: 0;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+    }
+
+    #slider .balloon > div:before, #slider .balloon > div:after {
+      content: '';
+      display: block;
+    }
+
+    #slider .noUi-target {
+      position: relative;
+    }
+
+    #slider .noUi-base,
+    #slider .noUi-connects {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    #slider .noUi-origin,
+    #slider .noUi-connect {
+      position: absolute;
+      will-change: transform;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #slider .noUi-connects {
+      overflow: hidden;
+      z-index: 0;
+      border-radius: 20px;
+    }
+
+    #slider .noUi-connects .noUi-connect {
+      width: 100%;
+      height: 100%;
+    }
+
+    #slider .noUi-handle {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      outline: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      top: -16px;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none !important;
+    }
+
+    #slider .noUi-handle:before, #slider .noUi-handle:after {
+      content: '';
+      position: absolute;
+    }
+
+    #slider .noUi-handle:before {
+      left: 25px;
+      top: 0;
+      width: 40px;
+      height: 40px;
+    }
+
+    #slider .noUi-handle:after {
+      /*left: 25px;*/
+      /*top: 2px;*/
+      /*width: 36px;*/
+      /*height: 36px;*/
+    }
+
+    #slider .noUi-origin {
+      left: auto;
+      right: 0;
+      height: 0;
+      width: 10%;
+    }
+
+    .bg-dim {
+      background: #fafafa;
+    }
+
+    .active-link {
+      color: #5347E3;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .rounded-xl {
+      border-radius: 15px;
+    }
+
+    .bg-dim-trans {
+      background: rgba(0, 0, 0, 0.4)
+    }
+
+    .rounded-3xl {
+      border-radius: 1.5rem;
+    }
+
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s;
+    }
+
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+    {
+      opacity: 0;
+    }
+
+    .lds-hourglass {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .lds-hourglass:after {
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      box-sizing: border-box;
+      border: 8px solid #ffffff;
+      border-color: #ffffff transparent #ffffff transparent;
+      animation: lds-hourglass 1.2s infinite;
+    }
+
+    @keyframes lds-hourglass {
+      0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+      50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      100% {
+        transform: rotate(1800deg);
+      }
+    }
+
+
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/javascript">
+    tailwind.config = {
+      darkMode: false, // or 'media' or 'class'
+      theme: {
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1536px'
+        },
+        colors: {
+          transparent: 'transparent',
+          current: 'currentColor',
+          light_bg: '#fafafa',
+          primary: '#5347E3',
+          dimm: '#F4F4F4',
+          primary_dim: '#F1F0FF',
+          processing: '#ED7F2F',
+          star: '#FF2C4D',
+          youtube_bg: '#FFE0E0',
+          youtube: '#ff0000',
+          instagram: '#833ab4',
+          facebook: '#4267b2',
+          spotify_bg: '#ccfddd',
+          spotify: '#1ed760',
+          coinbase: '#1652f0',
+          stripe: '#6772E5',
+          twitter_bg: '#E0F3FF',
+          twitter: '#1da1f2',
+          linkedin: '#0a66c2',
+          paypal: '#009cde',
+          border_inc: '#56D9FE',
+          border_all: '#4981FD',
+          border_com: '#14eeab',
+          light_black: '#242F40',
+          active_green: '#14B17A',
+          passive_green: '#11B28D',
+          bright_green: '#14eeab',
+          text_gray: '#5B6B82',
+          disabled_gray: '#e2e8f0',
+          dim_text: 'rgba(29,29,29,0.3)',
+          dim_border: '#ececec',
+          small_chart_border: '#6D7CFC',
+          lpink: '#D6D4E3',
+          disabled: 'rgba(29,29,29,0.42)',
+          placeholdr: '#a0afbf',
+          bg_color: '#F8FCFF',
+          border_c: '#707070',
+          primary_10p: 'rgba(49, 40, 114, 0.1)',
+          secondary: '#7366D0',
+          secondary_label: '#826AF9',
+          secondary_light: 'rgba(255,255,255, 0.1)',
+          clickable_bg: 'rgba(244,244,244, 0.42)',
+          secondary_light_2: 'rgba(255,255,255, 0.4)',
+          tertiary: '#F8FCFF',
+          yellow_bg: '#FFD371',
+          yellow_light: '#ffcd32',
+          orange_bg: '#FF7600',
+          red_bright: '#FA2D2D',
+          yellow_bg_txt: '#811E1E',
+          brown_text: '#763A0E',
+          reddish: '#CE3F1D',
+          create_survey_light: 'rgba(140,124,255,0.13)',
+          clicks: '#2592F0',
+          responses: '#1CC677',
+          incomplete: '#FFA700',
+          black: '#000000',
+          white: '#ffffff',
+          gray: {
+            50: '#f9fafb',
+            100: '#f3f4f6',
+            200: '#e5e7eb',
+            300: '#d1d5db',
+            400: '#9ca3af',
+            500: '#6b7280',
+            600: '#4b5563',
+            700: '#374151',
+            800: '#1f2937',
+            900: '#111827'
+          },
+          blue: {
+            50: '#eff6ff',
+            100: '#dbeafe',
+            200: '#bfdbfe',
+            300: '#93c5fd',
+            400: '#60a5fa',
+            500: '#3b82f6',
+            600: '#2563eb',
+            700: '#1d4ed8',
+            800: '#1e40af',
+            900: '#1e3a8a'
+          }
+        },
+        spacing: {
+          px: '1px',
+          0: '0px',
+          0.5: '0.125rem',
+          1: '0.25rem',
+          1.5: '0.375rem',
+          2: '0.5rem',
+          2.5: '0.625rem',
+          3: '0.75rem',
+          3.5: '0.875rem',
+          4: '1rem',
+          5: '1.25rem',
+          6: '1.5rem',
+          7: '1.75rem',
+          8: '2rem',
+          9: '2.25rem',
+          10: '2.5rem',
+          11: '2.75rem',
+          12: '3rem',
+          14: '3.5rem',
+          16: '4rem',
+          20: '5rem',
+          24: '6rem',
+          28: '7rem',
+          32: '8rem',
+          36: '9rem',
+          40: '10rem',
+          44: '11rem',
+          48: '12rem',
+          52: '13rem',
+          56: '14rem',
+          60: '15rem',
+          64: '16rem',
+          72: '18rem',
+          80: '20rem',
+          96: '24rem'
+        },
+        animation: {
+          none: 'none',
+          spin: 'spin 1s linear infinite',
+          ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+          pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          bounce: 'bounce 1s infinite'
+        },
+        backdropBlur: (theme) => theme('blur'),
+        backdropBrightness: (theme) => theme('brightness'),
+        backdropContrast: (theme) => theme('contrast'),
+        backdropGrayscale: (theme) => theme('grayscale'),
+        backdropHueRotate: (theme) => theme('hueRotate'),
+        backdropInvert: (theme) => theme('invert'),
+        backdropOpacity: (theme) => theme('opacity'),
+        backdropSaturate: (theme) => theme('saturate'),
+        backdropSepia: (theme) => theme('sepia'),
+        backgroundColor: (theme) => theme('colors'),
+        backgroundImage: {
+          none: 'none',
+          'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
+          'gradient-to-tr': 'linear-gradient(to top right, var(--tw-gradient-stops))',
+          'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+          'gradient-to-br': 'linear-gradient(to bottom right, var(--tw-gradient-stops))',
+          'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+          'gradient-to-bl': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
+          'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
+          'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))'
+        },
+        backgroundOpacity: (theme) => theme('opacity'),
+        backgroundPosition: {
+          bottom: 'bottom',
+          center: 'center',
+          left: 'left',
+          'left-bottom': 'left bottom',
+          'left-top': 'left top',
+          right: 'right',
+          'right-bottom': 'right bottom',
+          'right-top': 'right top',
+          top: 'top'
+        },
+        backgroundSize: {
+          auto: 'auto',
+          cover: 'cover',
+          contain: 'contain'
+        },
+        blur: {
+          0: '0',
+          none: '0',
+          sm: '4px',
+          DEFAULT: '8px',
+          md: '12px',
+          lg: '16px',
+          xl: '24px',
+          '2xl': '40px',
+          '3xl': '64px'
+        },
+        brightness: {
+          0: '0',
+          50: '.5',
+          75: '.75',
+          90: '.9',
+          95: '.95',
+          100: '1',
+          105: '1.05',
+          110: '1.1',
+          125: '1.25',
+          150: '1.5',
+          200: '2'
+        },
+        borderColor: (theme) => ({
+          ...theme('colors'),
+          DEFAULT: theme('colors.gray.200', 'currentColor')
+        }),
+        borderOpacity: (theme) => theme('opacity'),
+        borderRadius: {
+          none: '0px',
+          sm: '0.125rem',
+          DEFAULT: '0.25rem',
+          md: '0.375rem',
+          lg: '0.5rem',
+          xl: '0.75rem',
+          '2xl': '1rem',
+          '3xl': '1.5rem',
+          '12p': '12px',
+          full: '9999px'
+        },
+        borderWidth: {
+          DEFAULT: '1px',
+          0: '0px',
+          2: '2px',
+          4: '4px',
+          8: '8px'
+        },
+        boxShadow: {
+          sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+          DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+          md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+          xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+          '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+          inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+          none: 'none'
+        },
+        caretColor: (theme) => theme('colors'),
+        contrast: {
+          0: '0',
+          50: '.5',
+          75: '.75',
+          100: '1',
+          125: '1.25',
+          150: '1.5',
+          200: '2'
+        },
+        container: {},
+        content: {
+          none: 'none'
+        },
+        cursor: {
+          auto: 'auto',
+          default: 'default',
+          pointer: 'pointer',
+          wait: 'wait',
+          text: 'text',
+          move: 'move',
+          help: 'help',
+          'not-allowed': 'not-allowed'
+        },
+        divideColor: (theme) => theme('borderColor'),
+        divideOpacity: (theme) => theme('borderOpacity'),
+        divideWidth: (theme) => theme('borderWidth'),
+        dropShadow: {
+          sm: '0 1px 1px rgba(0,0,0,0.05)',
+          DEFAULT: ['0 1px 2px rgba(0, 0, 0, 0.1)', '0 1px 1px rgba(0, 0, 0, 0.06)'],
+          md: ['0 4px 3px rgba(0, 0, 0, 0.07)', '0 2px 2px rgba(0, 0, 0, 0.06)'],
+          lg: ['0 10px 8px rgba(0, 0, 0, 0.04)', '0 4px 3px rgba(0, 0, 0, 0.1)'],
+          xl: ['0 20px 13px rgba(0, 0, 0, 0.03)', '0 8px 5px rgba(0, 0, 0, 0.08)'],
+          '2xl': '0 25px 25px rgba(0, 0, 0, 0.15)',
+          none: '0 0 #0000'
+        },
+        fill: { current: 'currentColor' },
+        grayscale: {
+          0: '0',
+          DEFAULT: '100%'
+        },
+        hueRotate: {
+          '-180': '-180deg',
+          '-90': '-90deg',
+          '-60': '-60deg',
+          '-30': '-30deg',
+          '-15': '-15deg',
+          0: '0deg',
+          15: '15deg',
+          30: '30deg',
+          60: '60deg',
+          90: '90deg',
+          180: '180deg'
+        },
+        invert: {
+          0: '0',
+          DEFAULT: '100%'
+        },
+        flex: {
+          1: '1 1 0%',
+          auto: '1 1 auto',
+          initial: '0 1 auto',
+          none: 'none'
+        },
+        flexGrow: {
+          0: '0',
+          DEFAULT: '1'
+        },
+        flexShrink: {
+          0: '0',
+          DEFAULT: '1'
+        },
+        fontFamily: {
+          sans: [
+            'ui-sans-serif',
+            'system-ui',
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            '"Noto Sans"',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+            '"Noto Color Emoji"'
+          ],
+          serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+          mono: [
+            'ui-monospace',
+            'SFMono-Regular',
+            'Menlo',
+            'Monaco',
+            'Consolas',
+            '"Liberation Mono"',
+            '"Courier New"',
+            'monospace'
+          ]
+        },
+        fontSize: {
+          xs: ['0.75rem', { lineHeight: '1rem' }],
+          sm: ['0.875rem', { lineHeight: '1.25rem' }],
+          base: ['1rem', { lineHeight: '1.5rem' }],
+          lg: ['1.125rem', { lineHeight: '1.75rem' }],
+          xl: ['1.25rem', { lineHeight: '1.75rem' }],
+          '2xl': ['1.5rem', { lineHeight: '2rem' }],
+          '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+          '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+          '5xl': ['3rem', { lineHeight: '1' }],
+          '6xl': ['3.75rem', { lineHeight: '1' }],
+          '7xl': ['4.5rem', { lineHeight: '1' }],
+          '8xl': ['6rem', { lineHeight: '1' }],
+          '9xl': ['8rem', { lineHeight: '1' }]
+        },
+        fontWeight: {
+          thin: '100',
+          extralight: '200',
+          light: '300',
+          normal: '400',
+          medium: '500',
+          semibold: '600',
+          bold: '700',
+          extrabold: '800',
+          black: '900'
+        },
+        gap: (theme) => theme('spacing'),
+        gradientColorStops: (theme) => theme('colors'),
+        gridAutoColumns: {
+          auto: 'auto',
+          min: 'min-content',
+          max: 'max-content',
+          fr: 'minmax(0, 1fr)'
+        },
+        gridAutoRows: {
+          auto: 'auto',
+          min: 'min-content',
+          max: 'max-content',
+          fr: 'minmax(0, 1fr)'
+        },
+        gridColumn: {
+          auto: 'auto',
+          'span-1': 'span 1 / span 1',
+          'span-2': 'span 2 / span 2',
+          'span-3': 'span 3 / span 3',
+          'span-4': 'span 4 / span 4',
+          'span-5': 'span 5 / span 5',
+          'span-6': 'span 6 / span 6',
+          'span-7': 'span 7 / span 7',
+          'span-8': 'span 8 / span 8',
+          'span-9': 'span 9 / span 9',
+          'span-10': 'span 10 / span 10',
+          'span-11': 'span 11 / span 11',
+          'span-12': 'span 12 / span 12',
+          'span-full': '1 / -1'
+        },
+        gridColumnEnd: {
+          auto: 'auto',
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          5: '5',
+          6: '6',
+          7: '7',
+          8: '8',
+          9: '9',
+          10: '10',
+          11: '11',
+          12: '12',
+          13: '13'
+        },
+        gridColumnStart: {
+          auto: 'auto',
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          5: '5',
+          6: '6',
+          7: '7',
+          8: '8',
+          9: '9',
+          10: '10',
+          11: '11',
+          12: '12',
+          13: '13'
+        },
+        gridRow: {
+          auto: 'auto',
+          'span-1': 'span 1 / span 1',
+          'span-2': 'span 2 / span 2',
+          'span-3': 'span 3 / span 3',
+          'span-4': 'span 4 / span 4',
+          'span-5': 'span 5 / span 5',
+          'span-6': 'span 6 / span 6',
+          'span-full': '1 / -1'
+        },
+        gridRowStart: {
+          auto: 'auto',
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          5: '5',
+          6: '6',
+          7: '7'
+        },
+        gridRowEnd: {
+          auto: 'auto',
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          5: '5',
+          6: '6',
+          7: '7'
+        },
+        gridTemplateColumns: {
+          none: 'none',
+          1: 'repeat(1, minmax(0, 1fr))',
+          2: 'repeat(2, minmax(0, 1fr))',
+          3: 'repeat(3, minmax(0, 1fr))',
+          4: 'repeat(4, minmax(0, 1fr))',
+          5: 'repeat(5, minmax(0, 1fr))',
+          6: 'repeat(6, minmax(0, 1fr))',
+          7: 'repeat(7, minmax(0, 1fr))',
+          8: 'repeat(8, minmax(0, 1fr))',
+          9: 'repeat(9, minmax(0, 1fr))',
+          10: 'repeat(10, minmax(0, 1fr))',
+          11: 'repeat(11, minmax(0, 1fr))',
+          12: 'repeat(12, minmax(0, 1fr))'
+        },
+        gridTemplateRows: {
+          none: 'none',
+          1: 'repeat(1, minmax(0, 1fr))',
+          2: 'repeat(2, minmax(0, 1fr))',
+          3: 'repeat(3, minmax(0, 1fr))',
+          4: 'repeat(4, minmax(0, 1fr))',
+          5: 'repeat(5, minmax(0, 1fr))',
+          6: 'repeat(6, minmax(0, 1fr))'
+        },
+        height: (theme) => ({
+          auto: 'auto',
+          '6p': '6px',
+          '40p': '40px',
+          '300p': '300px',
+          '100p': '100px',
+          '500p': '500px',
+          '415p': '415px',
+          ...theme('spacing'),
+          '130per': '130%',
+          '220p': '220px',
+          'half': '25vh',
+          ...theme('spacing'),
+          '1/2': '50%',
+          '1/3': '33.333333%',
+          '2/3': '66.666667%',
+          '1/4': '25%',
+          '2/4': '50%',
+          '3/4': '75%',
+          '1/5': '20%',
+          '2/5': '40%',
+          '3/5': '60%',
+          '4/5': '80%',
+          '1/6': '16.666667%',
+          '2/6': '33.333333%',
+          '3/6': '50%',
+          '4/6': '66.666667%',
+          '5/6': '83.333333%',
+          full: '100%',
+          screen: '100vh'
+        }),
+        inset: (theme, { negative }) => ({
+          '25n': '-25px',
+          '10n': '-10px',
+          '40p': '44%',
+          '52p': '52%',
+          '10p': '10%',
+          '15p': '15%',
+          '21p': '21%',
+          '25p': '25%',
+          auto: 'auto',
+          ...theme('spacing'),
+          ...negative(theme('spacing')),
+          '1/2': '50%',
+          '1/3': '33.333333%',
+          '2/3': '66.666667%',
+          '1/4': '25%',
+          '2/4': '50%',
+          '3/4': '75%',
+          full: '100%',
+          '-1/2': '-50%',
+          '-1/3': '-33.333333%',
+          '-2/3': '-66.666667%',
+          '-1/4': '-25%',
+          '-2/4': '-50%',
+          '-3/4': '-75%',
+          '-full': '-100%'
+        }),
+        keyframes: {
+          spin: {
+            to: {
+              transform: 'rotate(360deg)'
+            }
+          },
+          ping: {
+            '75%, 100%': {
+              transform: 'scale(2)',
+              opacity: '0'
+            }
+          },
+          pulse: {
+            '50%': {
+              opacity: '.5'
+            }
+          },
+          bounce: {
+            '0%, 100%': {
+              transform: 'translateY(-25%)',
+              animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+            },
+            '50%': {
+              transform: 'none',
+              animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+            }
+          }
+        },
+        letterSpacing: {
+          tighter: '-0.05em',
+          tight: '-0.025em',
+          normal: '0em',
+          wide: '0.025em',
+          wider: '0.05em',
+          widest: '0.1em'
+        },
+        lineHeight: {
+          none: '1',
+          tight: '1.25',
+          snug: '1.375',
+          normal: '1.5',
+          relaxed: '1.625',
+          loose: '2',
+          3: '.75rem',
+          4: '1rem',
+          5: '1.25rem',
+          6: '1.5rem',
+          7: '1.75rem',
+          8: '2rem',
+          9: '2.25rem',
+          10: '2.5rem'
+        },
+        listStyleType: {
+          none: 'none',
+          disc: 'disc',
+          decimal: 'decimal'
+        },
+        margin: (theme, { negative }) => ({
+          auto: 'auto',
+          ...theme('spacing'),
+          ...negative(theme('spacing'))
+        }),
+        maxHeight: (theme) => ({
+          ...theme('spacing'),
+          full: '100%',
+          screen: '100vh'
+        }),
+        maxWidth: (theme, { breakpoints }) => ({
+          none: 'none',
+          0: '0rem',
+          xs: '20rem',
+          sm: '24rem',
+          md: '28rem',
+          lg: '32rem',
+          xl: '36rem',
+          '2xl': '42rem',
+          '3xl': '48rem',
+          '4xl': '56rem',
+          '5xl': '64rem',
+          '6xl': '72rem',
+          '7xl': '80rem',
+          full: '100%',
+          min: 'min-content',
+          max: 'max-content',
+          prose: '65ch',
+          ...breakpoints(theme('screens'))
+        }),
+        minHeight: {
+          0: '0px',
+          full: '100%',
+          screen: '100vh'
+        },
+        minWidth: {
+          0: '0px',
+          full: '100%',
+          min: 'min-content',
+          max: 'max-content'
+        },
+        objectPosition: {
+          bottom: 'bottom',
+          center: 'center',
+          left: 'left',
+          'left-bottom': 'left bottom',
+          'left-top': 'left top',
+          right: 'right',
+          'right-bottom': 'right bottom',
+          'right-top': 'right top',
+          top: 'top'
+        },
+        opacity: {
+          0: '0',
+          5: '0.05',
+          10: '0.1',
+          20: '0.2',
+          25: '0.25',
+          30: '0.3',
+          40: '0.4',
+          50: '0.5',
+          60: '0.6',
+          70: '0.7',
+          75: '0.75',
+          80: '0.8',
+          90: '0.9',
+          95: '0.95',
+          100: '1'
+        },
+        order: {
+          first: '-9999',
+          last: '9999',
+          none: '0',
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          5: '5',
+          6: '6',
+          7: '7',
+          8: '8',
+          9: '9',
+          10: '10',
+          11: '11',
+          12: '12'
+        },
+        outline: {
+          none: ['2px solid transparent', '2px'],
+          white: ['2px dotted white', '2px'],
+          black: ['2px dotted black', '2px']
+        },
+        padding: (theme) => theme('spacing'),
+        placeholderColor: (theme) => theme('colors'),
+        placeholderOpacity: (theme) => theme('opacity'),
+        ringColor: (theme) => ({
+          DEFAULT: theme('colors.blue.500', '#3b82f6'),
+          ...theme('colors')
+        }),
+        ringOffsetColor: (theme) => theme('colors'),
+        ringOffsetWidth: {
+          0: '0px',
+          1: '1px',
+          2: '2px',
+          4: '4px',
+          8: '8px'
+        },
+        ringOpacity: (theme) => ({
+          DEFAULT: '0.5',
+          ...theme('opacity')
+        }),
+        ringWidth: {
+          DEFAULT: '3px',
+          0: '0px',
+          1: '1px',
+          2: '2px',
+          4: '4px',
+          8: '8px'
+        },
+        rotate: {
+          '-180': '-180deg',
+          '-90': '-90deg',
+          '-45': '-45deg',
+          '-12': '-12deg',
+          '-6': '-6deg',
+          '-3': '-3deg',
+          '-2': '-2deg',
+          '-1': '-1deg',
+          0: '0deg',
+          1: '1deg',
+          2: '2deg',
+          3: '3deg',
+          6: '6deg',
+          12: '12deg',
+          45: '45deg',
+          90: '90deg',
+          180: '180deg'
+        },
+        saturate: {
+          0: '0',
+          50: '.5',
+          100: '1',
+          150: '1.5',
+          200: '2'
+        },
+        scale: {
+          0: '0',
+          50: '.5',
+          75: '.75',
+          90: '.9',
+          95: '.95',
+          100: '1',
+          105: '1.05',
+          110: '1.1',
+          125: '1.25',
+          150: '1.5'
+        },
+        sepia: {
+          0: '0',
+          DEFAULT: '100%'
+        },
+        skew: {
+          '-12': '-12deg',
+          '-6': '-6deg',
+          '-3': '-3deg',
+          '-2': '-2deg',
+          '-1': '-1deg',
+          0: '0deg',
+          1: '1deg',
+          2: '2deg',
+          3: '3deg',
+          6: '6deg',
+          12: '12deg'
+        },
+        space: (theme, { negative }) => ({
+          ...theme('spacing'),
+          ...negative(theme('spacing'))
+        }),
+        stroke: {
+          current: 'currentColor'
+        },
+        strokeWidth: {
+          0: '0',
+          1: '1',
+          2: '2'
+        },
+        textColor: (theme) => theme('colors'),
+        textOpacity: (theme) => theme('opacity'),
+        transformOrigin: {
+          center: 'center',
+          top: 'top',
+          'top-right': 'top right',
+          right: 'right',
+          'bottom-right': 'bottom right',
+          bottom: 'bottom',
+          'bottom-left': 'bottom left',
+          left: 'left',
+          'top-left': 'top left'
+        },
+        transitionDelay: {
+          75: '75ms',
+          100: '100ms',
+          150: '150ms',
+          200: '200ms',
+          300: '300ms',
+          500: '500ms',
+          700: '700ms',
+          1000: '1000ms'
+        },
+        transitionDuration: {
+          DEFAULT: '150ms',
+          75: '75ms',
+          100: '100ms',
+          150: '150ms',
+          200: '200ms',
+          300: '300ms',
+          500: '500ms',
+          700: '700ms',
+          1000: '1000ms'
+        },
+        transitionProperty: {
+          none: 'none',
+          all: 'all',
+          DEFAULT:
+            'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter',
+          colors: 'background-color, border-color, color, fill, stroke',
+          opacity: 'opacity',
+          shadow: 'box-shadow',
+          transform: 'transform'
+        },
+        transitionTimingFunction: {
+          DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
+          linear: 'linear',
+          in: 'cubic-bezier(0.4, 0, 1, 1)',
+          out: 'cubic-bezier(0, 0, 0.2, 1)',
+          'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)'
+        },
+        translate: (theme, { negative }) => ({
+          ...theme('spacing'),
+          ...negative(theme('spacing')),
+          '1/2': '50%',
+          '1/3': '33.333333%',
+          '2/3': '66.666667%',
+          '1/4': '25%',
+          '2/4': '50%',
+          '3/4': '75%',
+          full: '100%',
+          '-1/2': '-50%',
+          '-1/3': '-33.333333%',
+          '-2/3': '-66.666667%',
+          '-1/4': '-25%',
+          '-2/4': '-50%',
+          '-3/4': '-75%',
+          '-full': '-100%'
+        }),
+        width: (theme) => ({
+          auto: 'auto',
+          ...theme('spacing'),
+          '10p': '10%',
+          '40p': '40px',
+          '100p': '100px',
+          '1/2': '50%',
+          '1/3': '33.333333%',
+          '2/3': '66.666667%',
+          '1/4': '25%',
+          '2/4': '50%',
+          '3/4': '75%',
+          '1/5': '20%',
+          '2/5': '40%',
+          '3/5': '60%',
+          '4/5': '80%',
+          '68p': '68%',
+          '1/6': '16.666667%',
+          '2/6': '33.333333%',
+          '3/6': '50%',
+          '4/6': '66.666667%',
+          '5/6': '83.333333%',
+          '1/12': '8.333333%',
+          '2/12': '16.666667%',
+          '3/12': '25%',
+          '4/12': '33.333333%',
+          '5/12': '41.666667%',
+          '45pr': '45%',
+          '6/12': '50%',
+          '7/12': '58.333333%',
+          '8/12': '66.666667%',
+          '9/12': '75%',
+          '10/12': '83.333333%',
+          '11/12': '91.666667%',
+          full: '100%',
+          screen: '100vw',
+          min: 'min-content',
+          max: 'max-content',
+          '150p': '150px'
+        }),
+        zIndex: {
+          auto: 'auto',
+          0: '0',
+          10: '10',
+          20: '20',
+          30: '30',
+          40: '40',
+          50: '50'
+        }
+      },
+      variantOrder: [
+        'first',
+        'last',
+        'odd',
+        'even',
+        'visited',
+        'checked',
+        'empty',
+        'read-only',
+        'group-hover',
+        'group-focus',
+        'focus-within',
+        'hover',
+        'focus',
+        'focus-visible',
+        'active',
+        'disabled'
+      ],
+      variants: {
+        accessibility: ['responsive', 'focus-within', 'focus'],
+        alignContent: ['responsive'],
+        alignItems: ['responsive'],
+        alignSelf: ['responsive'],
+        animation: ['responsive'],
+        appearance: ['responsive'],
+        backdropBlur: ['responsive'],
+        backdropBrightness: ['responsive'],
+        backdropContrast: ['responsive'],
+        backdropFilter: ['responsive'],
+        backdropGrayscale: ['responsive'],
+        backdropHueRotate: ['responsive'],
+        backdropInvert: ['responsive'],
+        backdropOpacity: ['responsive'],
+        backdropSaturate: ['responsive'],
+        backdropSepia: ['responsive'],
+        backgroundAttachment: ['responsive'],
+        backgroundBlendMode: ['responsive'],
+        backgroundClip: ['responsive'],
+        backgroundColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        backgroundImage: ['responsive'],
+        backgroundOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        backgroundPosition: ['responsive'],
+        backgroundRepeat: ['responsive'],
+        backgroundSize: ['responsive'],
+        backgroundOrigin: ['responsive'],
+        blur: ['responsive'],
+        borderCollapse: ['responsive'],
+        borderColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        borderOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        borderRadius: ['responsive'],
+        borderStyle: ['responsive'],
+        borderWidth: ['responsive'],
+        boxDecorationBreak: ['responsive'],
+        boxShadow: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
+        boxSizing: ['responsive'],
+        brightness: ['responsive'],
+        clear: ['responsive'],
+        container: ['responsive'],
+        contrast: ['responsive'],
+        cursor: ['responsive'],
+        display: ['responsive'],
+        divideColor: ['responsive', 'dark'],
+        divideOpacity: ['responsive', 'dark'],
+        divideStyle: ['responsive'],
+        divideWidth: ['responsive'],
+        dropShadow: ['responsive'],
+        fill: ['responsive'],
+        filter: ['responsive'],
+        flex: ['responsive'],
+        flexDirection: ['responsive'],
+        flexGrow: ['responsive'],
+        flexShrink: ['responsive'],
+        flexWrap: ['responsive'],
+        float: ['responsive'],
+        fontFamily: ['responsive'],
+        fontSize: ['responsive'],
+        fontSmoothing: ['responsive'],
+        fontStyle: ['responsive'],
+        fontVariantNumeric: ['responsive'],
+        fontWeight: ['responsive'],
+        gap: ['responsive'],
+        gradientColorStops: ['responsive', 'dark', 'hover', 'focus'],
+        grayscale: ['responsive'],
+        gridAutoColumns: ['responsive'],
+        gridAutoFlow: ['responsive'],
+        gridAutoRows: ['responsive'],
+        gridColumn: ['responsive'],
+        gridColumnEnd: ['responsive'],
+        gridColumnStart: ['responsive'],
+        gridRow: ['responsive'],
+        gridRowEnd: ['responsive'],
+        gridRowStart: ['responsive'],
+        gridTemplateColumns: ['responsive'],
+        gridTemplateRows: ['responsive'],
+        height: ['responsive'],
+        hueRotate: ['responsive'],
+        inset: ['responsive'],
+        invert: ['responsive'],
+        isolation: ['responsive'],
+        justifyContent: ['responsive'],
+        justifyItems: ['responsive'],
+        justifySelf: ['responsive'],
+        letterSpacing: ['responsive'],
+        lineHeight: ['responsive'],
+        listStylePosition: ['responsive'],
+        listStyleType: ['responsive'],
+        margin: ['responsive'],
+        maxHeight: ['responsive'],
+        maxWidth: ['responsive'],
+        minHeight: ['responsive'],
+        minWidth: ['responsive'],
+        mixBlendMode: ['responsive'],
+        objectFit: ['responsive'],
+        objectPosition: ['responsive'],
+        opacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
+        order: ['responsive'],
+        outline: ['responsive', 'focus-within', 'focus'],
+        overflow: ['responsive'],
+        overscrollBehavior: ['responsive'],
+        padding: ['responsive'],
+        placeContent: ['responsive'],
+        placeItems: ['responsive'],
+        placeSelf: ['responsive'],
+        placeholderColor: ['responsive', 'dark', 'focus'],
+        placeholderOpacity: ['responsive', 'dark', 'focus'],
+        pointerEvents: ['responsive'],
+        position: ['responsive'],
+        resize: ['responsive'],
+        ringColor: ['responsive', 'dark', 'focus-within', 'focus'],
+        ringOffsetColor: ['responsive', 'dark', 'focus-within', 'focus'],
+        ringOffsetWidth: ['responsive', 'focus-within', 'focus'],
+        ringOpacity: ['responsive', 'dark', 'focus-within', 'focus'],
+        ringWidth: ['responsive', 'focus-within', 'focus'],
+        rotate: ['responsive', 'hover', 'focus'],
+        saturate: ['responsive'],
+        scale: ['responsive', 'hover', 'focus'],
+        sepia: ['responsive'],
+        skew: ['responsive', 'hover', 'focus'],
+        space: ['responsive'],
+        stroke: ['responsive'],
+        strokeWidth: ['responsive'],
+        tableLayout: ['responsive'],
+        textAlign: ['responsive'],
+        textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        textDecoration: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
+        textOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+        textOverflow: ['responsive'],
+        textTransform: ['responsive'],
+        transform: ['responsive'],
+        transformOrigin: ['responsive'],
+        transitionDelay: ['responsive'],
+        transitionDuration: ['responsive'],
+        transitionProperty: ['responsive'],
+        transitionTimingFunction: ['responsive'],
+        translate: ['responsive', 'hover', 'focus'],
+        userSelect: ['responsive'],
+        verticalAlign: ['responsive'],
+        visibility: ['responsive'],
+        whitespace: ['responsive'],
+        width: ['responsive'],
+        wordBreak: ['responsive'],
+        zIndex: ['responsive', 'focus-within', 'focus']
+      }
+    }
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-axios@3.2.0/dist/vue-axios.es5.min.js"></script>
+
+</head>
+<body class="h-full flex flex-col">
+<div id="app">
+    {% if user.is_authenticated %}
+    {% load tz %}
+    <header class="w-full py-6 px-4 mx-auto text-lg bg-primary">
+        <div class="container mx-auto max-w-6xl flex justify-between items-center">
+            <p class="float-end text-end text-white">Hi, {{ user }}</p>
+            <form class="m-0" action="" method="post">{% csrf_token %}<input type="hidden" name="logout" value="true"/>
+                <button class="border text-xs text-white border-white px-4 py-2">Logout</button>
+            </form>
+        </div>
+    </header>
+    <div class="h-full w-screen flex flex-col lg:flex-row flex-1 justify-center absolute overflow-scroll">
+        <div
+                class="w-full lg:w-1/6 flex lg:flex-col flex-row bg-gray-100 h-auto lg:h-full py-4 relative lg:sticky top-0 left-0 border-r-2">
+            <a href="/super/?q=orders">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'orders' %} text-primary {% endif %}">Orders</div>
+            </a>
+            <a href="/super/?q=payments">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'payments' %} text-primary {% endif %}">Payments
+                </div>
+            </a>
+            <a href="/super/?q=tickets">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'tickets' %} text-primary {% endif %}">Tickets
+                </div>
+            </a>
+            <a href="/super/?q=users">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'users' %} text-primary {% endif %}">Users</div>
+            </a>
+            <a href="/super/?q=apis">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'apis' %} text-primary {% endif %}">APIs</div>
+            </a>
+            <a href="/super/?q=services">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'services' %} text-primary {% endif %}">Services
+                </div>
+            </a>
+            <a href="/super/?q=contact-messages">
+                <div class="px-8 py-4 font-bold{% if request.GET.q == 'contact-messages' %} text-primary {% endif %}">Contact Messages
+                </div>
+            </a>
+        </div>
+        <div class="w-full lg:w-5/6 h-full flex flex-1 relative flex-col">
+            {% if request.GET.q == 'orders'%}
+            <div class="w-full flex flex-row bg-black text-white sticky top-0">
+                <a href="/super/?q=orders"
+                   class="{% if request.GET.q == 'orders' and request.GET.order_status == None   %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">All</div>
+                </a>
+                <a href="/super/?q=orders&order_status=completed"
+                   class="{% if request.GET.order_status == 'completed'  %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Completed</div>
+                </a>
+                <a href="/super/?q=orders&order_status=processing"
+                   class="{% if request.GET.order_status == 'processing' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">New/Processing</div>
+                </a>
+                <a href="/super/?q=orders&order_status=cancelled"
+                   class="{% if request.GET.order_status == 'cancelled' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Cancelled</div>
+                </a>
+                <a href="/super/?q=orders&order_status=failed"
+                   class="{% if request.GET.order_status == 'failed' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Failed</div>
+                </a>
+            </div>
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Order Details</div>
+                    <div class="border w-5/12 text-center p-2">Update</div>
+                </div>
+                {% for order in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">Order ID</span>: {{ order.uid }}<br/>
+                        <span class="text-primary">Email</span>: {{ order.user.email }}<br/>
+                        <span class="text-red_bright"><span
+                                class="text-primary">Service</span>: {{ order.quantity }} {{ order.service.platform.name | lower }} {{ order.service.name }}</span><br/>
+                        <span class="text-primary">Amount</span>: {{ order.amount }} USD<br/>
+                        <span class="text-primary">Panel Ref ID</span>: {{ order.response_raw }}<br/>
+                        <span class="text-primary">Payment Gateway</span>: {{ order.payment.payment_method }}<br/>
+                        <span class="text-primary">Transaction ID</span>: {{ order.payment.gateway_ref }}<br/>
+                        <span class="text-primary">Payment Status</span>: {{ order.payment.payment_status }}<br/>
+                        <span class="text-primary">Order Time</span>: {{ order.created_at }}<br/>
+                    </div>
+                    <div class="border w-5/12 p-4 break-words">
+                        <span class="text-primary">Panel Order Status</span>: {{ order.status }}<br/><br/>
+                        <span class="text-primary">User Visible Status</span>: {{ order.user_visible_status }}<br/><br/>
+                        {% if order.status != 'COMPLETED' %}
+                        <button type="button"
+                                class="inline-flex items-center px-4 py-2 leading-6 text-sm rounded-md text-white bg-primary transition ease-in-out duration-150"
+                                @click.stop="checkOrderStatus('{{order.uid}}','{{order.service.uid}}')">
+                            <svg v-if="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                                 fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                        stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor"
+                                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            Check Current Status
+                        </button>
+                        {% else %}
+                        <button class="bg-primary p-2 px-6 text-white text-xs border-none">Refill</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'payments'%}
+            <div class="w-full flex flex-row bg-black text-white sticky top-0">
+                <a href="/super/?q=payments"
+                   class="{% if request.GET.q == 'orders' and request.GET.order_status == None   %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">All</div>
+                </a>
+                <a href="/super/?q=payments&payment_status=completed"
+                   class="{% if request.GET.order_status == 'completed'  %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Completed</div>
+                </a>
+                <a href="/super/?q=payments&payment_status=processing"
+                   class="{% if request.GET.order_status == 'processing' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Processing</div>
+                </a>
+                <a href="/super/?q=payments&payment_status=pendig"
+                   class="{% if request.GET.order_status == 'processing' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Pending</div>
+                </a>
+                <a href="/super/?q=payments&payment_status=failed"
+                   class="{% if request.GET.order_status == 'failed' %} bg-gray-100 text-primary {% endif %}">
+                    <div class="px-8 py-3 font-medium">Failed</div>
+                </a>
+            </div>
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Payment Details</div>
+                    <div class="border w-5/12 text-center p-2">Update</div>
+                </div>
+                {% for payment in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">Payment ID</span>: {{ payment.uid }}<br/>
+                        <span class="text-primary">Amount</span>: {{ payment.amount }} USD<br/>
+                        <span class="text-primary">Payment Gateway</span>: {{ payment.payment_method }}<br/>
+                        <span class="text-primary">Transaction ID</span>: {{ payment.gateway_ref }}<br/>
+                        <span class="text-primary">Payment Status</span>: {{ payment.payment_status }}<br/>
+                        <span class="text-primary">Payment Time</span>: {{ payment.created_at }}<br/>
+                    </div>
+                    <div class="border w-5/12 p-4 break-words"></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'tickets'%}
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Email</div>
+                    <div class="border w-5/12 text-center p-2">Message</div>
+                    <div class="border w-5/12 text-center p-2">Reply</div>
+                </div>
+                {% for ticket in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">{{ ticket.email }}</span><br/>
+                    </div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">{{ ticket.message }}</span>
+                    </div>
+                    <div class="border w-5/12 text-center p-4 break-words"></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'users'%}
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-4">SL.</div>
+                    <div class="border w-6/12 text-center p-4">Details</div>
+                    <div class="border w-6/12 text-center p-4">Last Action/Order</div>
+                    <div class="border w-5/12 text-center p-4">Action</div>
+                </div>
+                {% for user in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">Email:</span> {{ user.email }}<br/>
+                    </div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary">{{ user.updated_at }}</span>
+                    </div>
+                    <div class="border w-5/12 text-center p-4 break-words">
+                        <button class="bg-primary px-4 py-2 text-xs border-none text-white">Message</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'api'%}
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Details</div>
+                    <div class="border w-6/12 text-center p-2">Varients</div>
+                    <div class="border w-5/12 text-center p-2">Action</div>
+                </div>
+                {% for service in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary capitalize">{{ service.platform.name | lower }} {{ service.name }}</span><br/>
+                    </div>
+                    <div class="border w-6/12 p-4 break-words">
+                        {% for varient in service.varients.all %}
+                        <div class="flex justify-between mb-2">
+            <span
+                    class="text-primary">{{ varient.quantity }} {{ service.name }} - {{ varient.discounted_price }} {{ varient.currency }} </span>
+                            <button class="bg-primary px-4 py-1 text-xs border-none text-white">Edit</button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="border w-5/12 text-center p-4 break-words">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'services'%}
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Details</div>
+                    <div class="border w-6/12 text-center p-2">Varients</div>
+                </div>
+                {% for service in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary capitalize">{{ service.platform.name | lower }} {{ service.name }}</span><br/>
+                    </div>
+                    <div class="border w-6/12 p-4 break-words">
+                        {% for varient in service.varients.all %}
+                        <div class="flex justify-between mb-2">
+            <span
+                    class="text-primary">{{ varient.quantity }} {{ service.name }} - {{ varient.discounted_price }} {{ varient.currency }} </span>
+                            <button class="bg-primary px-4 py-1 text-xs border-none text-white">Edit</button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if request.GET.q == 'contact-messages'%}
+            <div class="w-full flex-1 flex flex-col h-full w-full px-4 py-4 pb-32">
+                <div class="flex bg-black justify-around text-white">
+                    <div class="border w-1/12 text-center p-2">SL.</div>
+                    <div class="border w-6/12 text-center p-2">Details</div>
+                    <div class="border w-6/12 text-center p-2">Varients</div>
+                    <div class="border w-5/12 text-center p-2">Action</div>
+                </div>
+                {% for service in values %}
+                <div class="flex justify-around">
+                    <div class="border text-sm text-center w-1/12 p-4 break-words">{{ forloop.counter }}</div>
+                    <div class="border w-6/12 p-4 break-words">
+                        <span class="text-primary capitalize">{{ service.platform.name | lower }} {{ service.name }}</span><br/>
+                    </div>
+                    <div class="border w-6/12 p-4 break-words">
+                        {% for varient in service.varients.all %}
+                        <div class="flex justify-between mb-2">
+            <span
+                    class="text-primary">{{ varient.quantity }} {{ service.name }} - {{ varient.discounted_price }} {{ varient.currency }} </span>
+                            <button class="bg-primary px-4 py-1 text-xs border-none text-white">Edit</button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="border w-5/12 text-center p-4 break-words">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% else %}
+    <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                     alt="Workflow">
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+                {% if error %}
+                <p class="mt-2 bg-youtube_bg rounded-lg py-2 px-4 text-center text-sm text-youtube">
+                    {{ message }}
+                </p>
+                {% endif %}
+            </div>
+            <form class="mt-8 space-y-6" action="" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="remember" value="true">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div>
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input id="email-address" name="email" type="text" autocomplete="email" required
+                               class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                               placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required
+                               class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                               placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox"
+                               class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900"> Remember me </label>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit"
+                            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Sign in
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<script type="text/javascript">
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!',
+        loading: false
+      },
+      delimiters: ['[[',']]'],
+      methods: {
+        checkOrderStatus: function(orderId, serviceID) {
+          this.loading = true
+          this.axios.post('/order-status/',{
+            order_id: orderId,
+            service_id: serviceID,
+          },{headers:{
+          'X-CSRFToken': "{{ csrf_token }}"
+          }}).then((res)=>{
+            this.loading = false
+          }).catch(e=>{
+            this.loading = false
+          })
+        }
+      }
+    })
+
+</script>
+</body>
+</html>
+

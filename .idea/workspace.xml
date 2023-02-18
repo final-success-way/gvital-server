@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a446f83b-295c-4b53-8c77-f580bd14ca7f" name="Default" comment="discount admin fix">
+      <change beforePath="$PROJECT_DIR$/.idea/gvitalserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gvitalserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brf/settings_dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/brf/settings_dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/payments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/payments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="gvitalserver/invalid/Django" />
+    </ignored-facets>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1k2w3NJSvEdVAl7eqJJrVx2MnXJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/accounts" />
+      <recent name="$PROJECT_DIR$/payments" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/mail" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="gvitalserver" type="Python.DjangoServer" factoryName="Django server">
+      <module name="gvitalserver" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a446f83b-295c-4b53-8c77-f580bd14ca7f" name="Default" comment="" />
+      <created>1604074603120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604074603120</updated>
+      <workItem from="1639837401253" duration="19302000" />
+      <workItem from="1640606911430" duration="3205000" />
+      <workItem from="1640622211264" duration="408000" />
+      <workItem from="1640625726062" duration="212000" />
+      <workItem from="1640861058464" duration="6811000" />
+      <workItem from="1641188821703" duration="35000" />
+      <workItem from="1641611071645" duration="856000" />
+    </task>
+    <task id="LOCAL-00200" summary="Added card">
+      <created>1606545554127</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1606545554127</updated>
+    </task>
+    <task id="LOCAL-00201" summary="Added card">
+      <created>1606546352944</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546352944</updated>
+    </task>
+    <task id="LOCAL-00202" summary="Added card">
+      <created>1606546627009</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546627009</updated>
+    </task>
+    <task id="LOCAL-00203" summary="Added card">
+      <created>1606546805845</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546805845</updated>
+    </task>
+    <task id="LOCAL-00204" summary="Added card">
+      <created>1606547570929</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1606547570929</updated>
+    </task>
+    <task id="LOCAL-00205" summary="Added card">
+      <created>1606547603114</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1606547603115</updated>
+    </task>
+    <task id="LOCAL-00206" summary="Added card">
+      <created>1606547870351</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1606547870351</updated>
+    </task>
+    <task id="LOCAL-00207" summary="Added card">
+      <created>1606553269351</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1606553269352</updated>
+    </task>
+    <task id="LOCAL-00208" summary="Added card">
+      <created>1606562548895</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1606562548895</updated>
+    </task>
+    <task id="LOCAL-00209" summary="Added card">
+      <created>1606562653319</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1606562653319</updated>
+    </task>
+    <task id="LOCAL-00210" summary="Added card">
+      <created>1606562790194</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1606562790194</updated>
+    </task>
+    <task id="LOCAL-00211" summary="Added card">
+      <created>1606563641618</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1606563641618</updated>
+    </task>
+    <task id="LOCAL-00212" summary="Added card">
+      <created>1606563690519</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1606563690519</updated>
+    </task>
+    <task id="LOCAL-00213" summary="Added card">
+      <created>1606564123251</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1606564123251</updated>
+    </task>
+    <task id="LOCAL-00214" summary="Added card">
+      <created>1606565335853</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1606565335853</updated>
+    </task>
+    <task id="LOCAL-00215" summary="Added card">
+      <created>1606567009591</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1606567009591</updated>
+    </task>
+    <task id="LOCAL-00216" summary="Added card">
+      <created>1606567395006</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1606567395006</updated>
+    </task>
+    <task id="LOCAL-00217" summary="Added card">
+      <created>1606578205398</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1606578205399</updated>
+    </task>
+    <task id="LOCAL-00218" summary="Added card">
+      <created>1606582766584</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1606582766584</updated>
+    </task>
+    <task id="LOCAL-00219" summary="Added card">
+      <created>1606583376340</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1606583376340</updated>
+    </task>
+    <task id="LOCAL-00220" summary="Added card">
+      <created>1606588243473</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1606588243473</updated>
+    </task>
+    <task id="LOCAL-00221" summary="Added card">
+      <created>1606630916349</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1606630916349</updated>
+    </task>
+    <task id="LOCAL-00222" summary="Added card">
+      <created>1606631543603</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1606631543603</updated>
+    </task>
+    <task id="LOCAL-00223" summary="Filter products by platform">
+      <created>1606838120239</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1606838120239</updated>
+    </task>
+    <task id="LOCAL-00224" summary="Filter products by platform">
+      <created>1606839505865</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1606839505865</updated>
+    </task>
+    <task id="LOCAL-00225" summary="Stripe change">
+      <created>1606852763968</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1606852763969</updated>
+    </task>
+    <task id="LOCAL-00226" summary="Stripe change">
+      <created>1606852965286</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1606852965286</updated>
+    </task>
+    <task id="LOCAL-00227" summary="Stripe change">
+      <created>1606853068070</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1606853068070</updated>
+    </task>
+    <task id="LOCAL-00228" summary="Stripe change">
+      <created>1606853241317</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1606853241317</updated>
+    </task>
+    <task id="LOCAL-00229" summary="AWS SES Access changes">
+      <created>1606854560761</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1606854560761</updated>
+    </task>
+    <task id="LOCAL-00230" summary="AWS SES Access changes">
+      <created>1606854933343</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1606854933344</updated>
+    </task>
+    <task id="LOCAL-00231" summary="Maja">
+      <created>1607029948821</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1607029948822</updated>
+    </task>
+    <task id="LOCAL-00232" summary="Discount on payment gateway">
+      <created>1607074582723</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1607074582724</updated>
+    </task>
+    <task id="LOCAL-00233" summary="Discount on payment gateway">
+      <created>1607075177082</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1607075177083</updated>
+    </task>
+    <task id="LOCAL-00234" summary="Discount on payment gateway">
+      <created>1607075509182</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1607075509182</updated>
+    </task>
+    <task id="LOCAL-00235" summary="Discount on payment gateway">
+      <created>1607075657951</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1607075657951</updated>
+    </task>
+    <task id="LOCAL-00236" summary="Discount on payment gateway">
+      <created>1607075895170</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1607075895170</updated>
+    </task>
+    <task id="LOCAL-00237" summary="Discount on payment gateway">
+      <created>1607076103953</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1607076103953</updated>
+    </task>
+    <task id="LOCAL-00238" summary="Discount on payment gateway">
+      <created>1607076168112</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1607076168112</updated>
+    </task>
+    <task id="LOCAL-00239" summary="Discount on payment gateway">
+      <created>1607081679408</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1607081679408</updated>
+    </task>
+    <task id="LOCAL-00240" summary="Discount on payment gateway">
+      <created>1607082083495</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1607082083495</updated>
+    </task>
+    <task id="LOCAL-00241" summary="Discount on payment gateway">
+      <created>1607082424860</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1607082424860</updated>
+    </task>
+    <task id="LOCAL-00242" summary="Discount on payment gateway">
+      <created>1607083047851</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1607083047851</updated>
+    </task>
+    <task id="LOCAL-00243" summary="Discount on payment gateway">
+      <created>1607083245623</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1607083245623</updated>
+    </task>
+    <task id="LOCAL-00244" summary="Discount on payment gateway">
+      <created>1607083436783</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1607083436783</updated>
+    </task>
+    <task id="LOCAL-00245" summary="Stripe live key">
+      <created>1607086438498</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1607086438498</updated>
+    </task>
+    <task id="LOCAL-00246" summary="New Faq model">
+      <created>1607433649759</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1607433649759</updated>
+    </task>
+    <task id="LOCAL-00247" summary="discount admin fix">
+      <created>1607434056429</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1607434056430</updated>
+    </task>
+    <task id="LOCAL-00248" summary="discount admin fix">
+      <created>1607438735964</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1607438735964</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Vultr server setup" />
+    <MESSAGE value="removed api base" />
+    <MESSAGE value="Posts" />
+    <MESSAGE value="git" />
+    <MESSAGE value="Added card" />
+    <MESSAGE value="Filter products by platform" />
+    <MESSAGE value="Stripe change" />
+    <MESSAGE value="AWS SES Access changes" />
+    <MESSAGE value="Maja" />
+    <MESSAGE value="Discount on payment gateway" />
+    <MESSAGE value="Stripe live key" />
+    <MESSAGE value="New Faq model" />
+    <MESSAGE value="discount admin fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="discount admin fix" />
+  </component>
+</project>

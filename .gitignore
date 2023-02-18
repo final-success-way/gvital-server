@@ -1,0 +1,7 @@
+dataflair-debug.log
+geckodriver
+venv
+**/__pycache__
+test.py
+node_modules
+assets

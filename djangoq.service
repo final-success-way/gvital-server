@@ -1,0 +1,14 @@
+[Unit]
+Description=DjangoQ Daemon
+Requires=djangoq.socket
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/gvital-server
+ExecStart=/root/venv/bin/python /root/gvital-server/manage.py qcluster \
+         --settings=brf.settings_prod
+
+[Install]
+WantedBy=multi-user.target
